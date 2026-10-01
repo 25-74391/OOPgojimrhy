@@ -1,0 +1,145 @@
+LAST MILES DELIVERY PLANNER:
+1. Delivery App Onboarding & Access
+•	View welcome screen
+
+•	View application title and system overview
+
+•	Start delivery session
+
+•	View warehouse hub origin location (Batangas State University ARASOF - Nasugbu)
+
+Possible scenario:
+
+
+•	Pag bukas ng rider sa app para ma check ang mga delivery  galing sa BSU-ARASOF warehouse.
+
+2. Delivery Planner Dashboard
+•	View total active deliveries
+
+•	View pending deliveries
+
+•	View delivered packages count
+
+•	View failed delivery attempts count
+
+•	View total package weight load (kg)
+
+•	View total collectable amount (COD)
+
+Possible scenario:
+
+
+•	Pagsuri ng rider sa pangkalahatang rami, kabuuang timbang ng kargamento, at kabuuang pera na kailangang makolekta bago umalis ng hub.
+
+3. Package & Product Entry Management
+•	Input recipient name
+
+•	Select destination Barangay (Nasugbu local barangays)
+
+•	Input specific street / house address
+
+•	Select product item
+
+•	View product price
+
+•	Input product weight (kg)
+
+•	View product declared value
+
+•	Auto-calculate total delivery fee
+
+Possible scenario:
+
+
+•	Pagpapasok ng bagong delivery record kung saan pumipili ng Barangay sa Nasugbu, pumipili ng kaukulang produkto, at awtomatikong kinokompyut ang presyo at timbang.
+
+4. Custom Distance Lookup & Sorting (Nasugbu Barangays)
+•	View hardcoded distance lookup table for Nasugbu Barangays (distance from ARASOF warehouse)
+
+•	Auto-calculate road/haversine distance
+
+•	Sort packages from nearest to farthest (Nearest-First sorting)
+
+•	Manual distance override / sorting
+
+•	Offline distance lookup support
+
+Possible scenario:
+
+
+•	Pagsasaayos sa listahan ng mga ihahatid kung saan awtomatikong inuuna sa itaas ang mga Barangay na pinakamalapit sa ARASOF (tulad ng Poblacion / Wawa) bago ang mga malalayo (tulad ng Kaylaway / Bilaran).
+
+5. Delivery Attempt Tracking (3-Attempt Rule)
+•	View current attempt count (Attempt 1, 2, or 3)
+
+•	Update attempt status
+
+•	Record failure reason (Recipient Unavailable, Wrong Address, Refused to Accept)
+
+•	Mark delivery as Failed Attempt 1
+
+•	Mark delivery as Failed Attempt 2
+
+•	Mark delivery as Failed Attempt 3 (Max limit reached)
+
+•	Auto-flag package as "Return to Warehouse" after 3 failed attempts
+
+Possible scenario:
+
+
+•	Pagdating ng rider sa bahay ng bibili sa Brgy. Aga ngunit walang tao, iu-update niya ang status bilang "Attempt 1/3". Kapag umabot na sa pangatlong beses na hindi naiserve, awtomatikong ipapadala ng system ang package sa listahan ng mga kailangang ibalik sa warehouse.
+
+
+6. Delivery Status Management
+•	Update delivery status
+
+•	Mark as Pending / In Transit
+
+•	Mark as Delivered
+
+•	Mark as Failed Attempt
+
+•	Mark as Returned to Base
+
+•	Delete package from active queue
+
+Possible scenario:
+
+
+•	Pag-marka sa package bilang "Delivered" at pag-check sa checkbox pagkatapos itong mapadala  at maiabot tapos mabayaran ng customer.
+
+7. Analytics & Summary Reports
+•	View daily delivery summary
+
+•	View successful delivery rate
+
+•	View failed delivery rate
+
+•	View total kilometers traveled
+
+•	View total cash collected (COD summary)
+
+•	Export delivery completion report
+
+Possible scenario:
+
+
+•	Pagsuri sa pagtatapos ng araw kung ilang porsyento ng mga ihahatid ang matagumpay na naideliver at kung magkano ang kabuuang perang maire-remit sa warehouse.
+
+8. Local Data Persistence
+•	Auto-save delivery list using Android SharedPreferences
+
+•	Convert package and product data into JSON format
+
+•	Auto-load saved list on application launch
+
+•	Persist attempt counts and completion states
+
+•	Restore sorted distance order after app restart
+
+Possible scenario:
+
+
+•	Pagtiyak na mananatiling ligtas at naka-save sa cellphone ng rider ang lahat ng kaniyang ihahatid, presyo, at attempt status kahit ma-lowbat  ang kaniyang cellphone
+
+
